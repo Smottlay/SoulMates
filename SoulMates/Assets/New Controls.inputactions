@@ -110,8 +110,30 @@
                 },
                 {
                     "name": "",
+                    "id": "b072ce14-232a-4676-abdc-f06755cf7c7b",
+                    "path": "<OculusTouchController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "A Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "1c6b31e0-629a-4d76-8bc3-53303edfd4be",
                     "path": "<OpenVROculusTouchController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "B Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2a96307c-9044-4d1f-bf9f-167c3c31ef82",
+                    "path": "<OculusTouchController>{RightHand}/secondaryButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
