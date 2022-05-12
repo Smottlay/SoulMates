@@ -1,56 +1,51 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using Unity.XR.OpenVR;
 
 public class ShowTeleportArch : MonoBehaviour
 {
-    Mesh mesh;
-    public float meshWidth;
+    public Transform playerDummy;
+    public LineRenderer lr;
+    bool show;
 
-    public float velocity;
-    public float angle;
-    public int resolution;
-
-    float g;
-    float radianAngle;
-
-    private void Awake()
+    public void ShowTp(InputAction.CallbackContext callbackContext)
     {
-        mesh = GetComponent<MeshFilter>().mesh;
-        g = Mathf.Abs(Physics.gravity.y);
-    }
-
-    private void Start()
-    {
-        MakeArcMesh(CalculateArcArray());
-    }
-
-    void MakeArcMesh(Vector3[] arcVerts)
-    {
-        mesh.Clear();
-        Vector3[] vertices;
-    }
-
-    Vector3[] CalculateArcArray()
-    {
-        Vector3[] arcArray = new Vector3[resolution + 1];
-
-        radianAngle = Mathf.Deg2Rad * angle;
-        float maxDistance = (velocity * velocity * Mathf.Sin(2 * radianAngle)) / g;
-
-        for (int i = 0; i <= resolution; i++)
+        if (callbackContext.started)
         {
-            float t = (float)i / (float)resolution;
-            arcArray[i] = CalculateArcPoint(t, maxDistance);
+            show = true;
+            lr.enabled = true;
         }
-
-        return arcArray;
+        else if (callbackContext.canceled)
+        {
+            show = false;
+            lr.enabled = false;
+            playerDummy.gameObject.SetActive(false);
+        }
     }
 
-    Vector3 CalculateArcPoint(float t, float maxDistance)
+    private void FixedUpdate()
     {
-        float x = t * maxDistance;
-        float y = x * Mathf.Tan(radianAngle) - ((g * x * x) / (2 * velocity * velocity * Mathf.Cos(radianAngle) * Mathf.Cos(radianAngle)));
-        return new Vector3(x, y);
+        if (show == true)
+        {
+            lr.SetPosition(0, transform.position);
+            if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 500f))
+            {
+                lr.SetPosition(1, hit.point);
+                if (hit.collider.tag == "Floor")
+                {
+                    playerDummy.gameObject.SetActive(true);
+                    playerDummy.position = hit.point;
+                    playerDummy.eulerAngles = new Vector3();
+                }
+                else playerDummy.gameObject.SetActive(false);
+            }
+            else
+            {
+                lr.SetPosition(1, transform.position + transform.forward * 500f);
+                playerDummy.gameObject.SetActive(false);
+            }
+        }
     }
 }
