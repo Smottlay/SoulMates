@@ -10,6 +10,8 @@ public class DrawLineRenderer : MonoBehaviour
     public LineRenderer linerenderer;
     public float vertexCount = 12;
     public float Point2Ypositio = 2;
+
+    
     // Start is called before the first frame update
     void Start()
     {
