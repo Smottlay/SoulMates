@@ -9,7 +9,7 @@ public class NewBehaviourScript : MonoBehaviour
         if(Input.GetButtonDown("Fire1")) {
             if (Physics.Raycast(transform.position, transform.forward, out hit, 1000)) {
                 if(hit.collider.tag == "letter") {
-
+                    
                 }
             }
         }
