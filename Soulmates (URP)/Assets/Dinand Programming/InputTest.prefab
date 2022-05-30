@@ -1,0 +1,238 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1166324088005380390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1915534511511200846}
+  - component: {fileID: 5088697873774073781}
+  - component: {fileID: 9080011224553865793}
+  m_Layer: 0
+  m_Name: InputTest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1915534511511200846
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166324088005380390}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5088697873774073781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166324088005380390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba9d6841346325648be1326e3eb40f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9080011224553865793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166324088005380390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 94fe7c0ad4323d34cb9d60e2057ef9cf,
+    type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5088697873774073781}
+        m_TargetAssemblyTypeName: InputTest, Assembly-CSharp
+        m_MethodName: A
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 924a6c22-d763-4dbc-bafd-a96cbb66e91a
+    m_ActionName: New action map/A Button
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5088697873774073781}
+        m_TargetAssemblyTypeName: InputTest, Assembly-CSharp
+        m_MethodName: B
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 708a7ad7-79c8-4157-a702-7008244b59c8
+    m_ActionName: New action map/B Button
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5088697873774073781}
+        m_TargetAssemblyTypeName: InputTest, Assembly-CSharp
+        m_MethodName: RT
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 6e1fc200-18f8-4f30-b853-dc246044ae41
+    m_ActionName: New action map/Right Trigger
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5088697873774073781}
+        m_TargetAssemblyTypeName: InputTest, Assembly-CSharp
+        m_MethodName: RG
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 8695a2d5-0913-4ad9-b3ed-1fb47f934159
+    m_ActionName: New action map/Right Grip
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5088697873774073781}
+        m_TargetAssemblyTypeName: InputTest, Assembly-CSharp
+        m_MethodName: RS
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: ca408e5a-37c3-4a76-a718-f2c901ab7761
+    m_ActionName: New action map/Right Stick
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5088697873774073781}
+        m_TargetAssemblyTypeName: InputTest, Assembly-CSharp
+        m_MethodName: X
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: a9050ad8-72ff-46d6-ac35-2003fb896ffe
+    m_ActionName: New action map/X Button
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5088697873774073781}
+        m_TargetAssemblyTypeName: InputTest, Assembly-CSharp
+        m_MethodName: Y
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 977e57cc-95ee-4c6d-821f-bcc68068b704
+    m_ActionName: New action map/Y Button
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5088697873774073781}
+        m_TargetAssemblyTypeName: InputTest, Assembly-CSharp
+        m_MethodName: LT
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: b680fa10-944a-4591-9128-62de7d4b6e31
+    m_ActionName: New action map/Left Trigger
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5088697873774073781}
+        m_TargetAssemblyTypeName: InputTest, Assembly-CSharp
+        m_MethodName: LG
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 80e383ab-a237-42cf-af23-b5f2ffe20bc7
+    m_ActionName: New action map/Left Grip
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5088697873774073781}
+        m_TargetAssemblyTypeName: InputTest, Assembly-CSharp
+        m_MethodName: LS
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 82ba59b8-d1fc-4c09-8acd-d3ac7d19b00c
+    m_ActionName: New action map/Left Stick
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: New action map
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
