@@ -111,8 +111,8 @@ Material:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
     - _BaseStremght: 0
-    - _Base_Scale: 0.54
-    - _Base_Speed: 1.37
+    - _Base_Scale: 0.44
+    - _Base_Speed: 0.2
     - _Base_Strenght: 1
     - _Base_speed: 0.4
     - _Blend: 0
@@ -144,11 +144,11 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _Noise_Edge1: 0
-    - _Noise_Edge2: 0
+    - _Noise_Edge2: -1.02
     - _Noise_Power: 0
     - _Noise_Size: 0
-    - _Noise_Speed: 1
-    - _Normal_Size: 0.88
+    - _Noise_Speed: 0
+    - _Normal_Size: -1.01
     - _OcclusionStrength: 1
     - _OpaqueCullMode: 2
     - _Parallax: 0.02
@@ -203,11 +203,11 @@ Material:
     - _NoiseRemap: {r: 1.08, g: 0.62, b: 0.74, a: 0}
     - _Noise_Remap: {r: 0, g: 0, b: 0, a: 0}
     - _PRI_Color: {r: 1, g: 1, b: 1, a: 0}
-    - _Pri_Color: {r: 0.86666673, g: 0.86666673, b: 0.86666673, a: 1}
+    - _Pri_Color: {r: 0, g: 0.65482783, b: 0.9433962, a: 1}
     - _RotateProj: {r: 1, g: 1, b: 1, a: 90}
     - _Rotate_Projection: {r: 1, g: 1, b: 1, a: 100}
     - _SEC_Color: {r: 0.34282663, g: 0.6064125, b: 0.6792453, a: 0}
-    - _Sec_Color: {r: 0.3443396, g: 1, b: 0.9935111, a: 0}
+    - _Sec_Color: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &3673933466314192831
