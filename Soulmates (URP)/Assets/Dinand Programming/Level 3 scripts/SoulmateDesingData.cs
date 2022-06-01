@@ -19,7 +19,16 @@ public class PropInfo
     public int propIndex;
     public Vector3 position;
     public Quaternion rotation;
+    public PropInfo()
+    {
 
+    }
+    public PropInfo(PropInfo newProp)
+    {
+        this.propIndex = newProp.propIndex;
+        this.position = newProp.position;
+        this.rotation = newProp.rotation;
+    }
     public PropInfo(int index, Vector3 pos, Quaternion rot)
     {
         this.propIndex = index;
