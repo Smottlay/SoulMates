@@ -19,6 +19,7 @@ public class PropInfo
     public int propIndex;
     public Vector3 position;
     public Quaternion rotation;
+    public Vector3 scale;
     public PropInfo()
     {
 
@@ -28,11 +29,13 @@ public class PropInfo
         this.propIndex = newProp.propIndex;
         this.position = newProp.position;
         this.rotation = newProp.rotation;
+        this.scale = newProp.scale;
     }
-    public PropInfo(int index, Vector3 pos, Quaternion rot)
+    public PropInfo(int index, Vector3 pos, Quaternion rot, Vector3 scl)
     {
         this.propIndex = index;
         this.position = pos;
         this.rotation = rot;
+        this.scale = scl;
     }
 }
