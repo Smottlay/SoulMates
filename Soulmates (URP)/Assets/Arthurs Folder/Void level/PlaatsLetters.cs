@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PlaatsLetters : MonoBehaviour
 {
-    public RaycastHit hit;
-    private void Update() {
-        if(Input.GetButtonDown("Fire1")) {
-            if (Physics.Raycast(transform.position, transform.forward, out hit, 1000)) {
-                if(hit.collider.tag == "letter") {
-
-                }
-            }
+    public GameObject trigger;
+    private void OnTriggerEnter(Collider other) {
+        if(other.CompareTag("S")) {
+            this.transform.position = other.transform.position;
+            this.GetComponent<Rigidbody>().isKinematic = true;
+            this.transform.rotation = other.transform.rotation;
+            this.GetComponent<BoxCollider>().isTrigger = true;
+            trigger = other.gameObject;
         }
+    }
+    public void DropLetter() {
+        this.GetComponent<RotateAround>().enabled = false;
     }
 }
