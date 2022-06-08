@@ -3839,6 +3839,11 @@ PrefabInstance:
       propertyPath: mainCam
       value: 
       objectReference: {fileID: 1027139078}
+    - target: {fileID: 5310176065350082188, guid: 64186d17cda092540ae0e93710bb8b0a,
+        type: 3}
+      propertyPath: smoothFactor
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5310176065350082189, guid: 64186d17cda092540ae0e93710bb8b0a,
         type: 3}
       propertyPath: m_Name
@@ -3929,6 +3934,11 @@ PrefabInstance:
       propertyPath: mainCam
       value: 
       objectReference: {fileID: 1027139078}
+    - target: {fileID: 9166368003272106754, guid: 403571796878c044bbfd2b84bd5d7cad,
+        type: 3}
+      propertyPath: smoothFactor
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 9166368003272106755, guid: 403571796878c044bbfd2b84bd5d7cad,
         type: 3}
       propertyPath: m_Name
@@ -3948,6 +3958,11 @@ PrefabInstance:
       propertyPath: mainCam
       value: 
       objectReference: {fileID: 1027139078}
+    - target: {fileID: 1309986446445185040, guid: e76dbf89c52bdc348ba42349580a758d,
+        type: 3}
+      propertyPath: smoothFactor
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1309986446445185041, guid: e76dbf89c52bdc348ba42349580a758d,
         type: 3}
       propertyPath: m_Name
@@ -4098,6 +4113,11 @@ PrefabInstance:
       propertyPath: mainCam
       value: 
       objectReference: {fileID: 1027139078}
+    - target: {fileID: 6648601314435182990, guid: e22fdbe59f650c843b2e371ebe4b9d1b,
+        type: 3}
+      propertyPath: smoothFactor
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 6648601314435182991, guid: e22fdbe59f650c843b2e371ebe4b9d1b,
         type: 3}
       propertyPath: m_Name
@@ -4128,6 +4148,11 @@ PrefabInstance:
       propertyPath: mainCam
       value: 
       objectReference: {fileID: 1027139078}
+    - target: {fileID: 8610161314585705342, guid: d88ae82589a1d98469c1eea04a1e3d00,
+        type: 3}
+      propertyPath: smoothFactor
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 8610161314585705343, guid: d88ae82589a1d98469c1eea04a1e3d00,
         type: 3}
       propertyPath: m_Name
