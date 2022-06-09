@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SoulmateDesingData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <name>New Desing Data</name>
+  <hideFlags>None</hideFlags>
+  <shapeIndex>3</shapeIndex>
+  <floorTextureIndex>2</floorTextureIndex>
+  <wallTextrureIndex>1</wallTextrureIndex>
+  <ceilingTextureIndex>0</ceilingTextureIndex>
+  <windows>
+    <PropInfo>
+      <propIndex>0</propIndex>
+      <position>
+        <x>1</x>
+        <y>2</y>
+        <z>3</z>
+      </position>
+      <rotation>
+        <x>0.03709997</x>
+        <y>0.04170831</y>
+        <z>0.0507340878</z>
+        <w>0.997151</w>
+        <eulerAngles>
+          <x>4.00000048</x>
+          <y>4.99999952</y>
+          <z>6</z>
+        </eulerAngles>
+      </rotation>
+    </PropInfo>
+  </windows>
+  <props>
+    <PropInfo>
+      <propIndex>9</propIndex>
+      <position>
+        <x>8</x>
+        <y>7</y>
+        <z>6</z>
+      </position>
+      <rotation>
+        <x>0.04449057</x>
+        <y>0.0337132029</y>
+        <z>0.0246143322</z>
+        <w>0.9981374</w>
+        <eulerAngles>
+          <x>5.00000048</x>
+          <y>3.99999952</y>
+          <z>3</z>
+        </eulerAngles>
+      </rotation>
+    </PropInfo>
+  </props>
+</SoulmateDesingData>

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e27ab2d0db77f4db2efce80d1876f0, type: 3}
+  m_Name: New Desing Data
+  m_EditorClassIdentifier: 
+  shapeIndex: 3
+  floorTextureIndex: 2
+  wallTextrureIndex: 1
+  ceilingTextureIndex: 0
+  windows:
+  - propIndex: 0
+    position: {x: 1, y: 2, z: 3}
+    rotation: {x: 0.03709997, y: 0.04170831, z: 0.050734088, w: 0.997151}
+  props:
+  - propIndex: 9
+    position: {x: 8, y: 7, z: 6}
+    rotation: {x: 0.04449057, y: 0.033713203, z: 0.024614332, w: 0.9981374}
