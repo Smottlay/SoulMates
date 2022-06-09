@@ -10,17 +10,8 @@ public class PlaatsLetters : MonoBehaviour
         if(other.gameObject.name == this.gameObject.name) {
             Destroy(this.gameObject);
             Color newcolor = other.GetComponent<MeshRenderer>().material.color;
-            
             newcolor.a = 255;
             other.GetComponent<MeshRenderer>().material.color = newcolor;
-            /*
-            this.GetComponent<Rigidbody>().isKinematic = true;
-            this.GetComponent<RotateAround>().enabled = false;
-            this.GetComponent<BoxCollider>().isTrigger = true;
-            this.transform.rotation = other.transform.rotation;
-            this.transform.position = other.transform.position;
-            trigger = other.gameObject;
-            */
         }
     }
 }
