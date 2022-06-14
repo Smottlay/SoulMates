@@ -66,16 +66,16 @@ Material:
     - _CullMode: 2
     - _CullModeForward: 2
     - _DepthOffsetEnable: 0
-    - _DissolveRange: 5.41
+    - _DissolveRange: 12.35999
     - _DoubleSidedEnable: 0
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 2
     - _DstBlend: 0
-    - _EdgeWidth: 0.1
+    - _EdgeWidth: 0.05
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
     - _NoiseAmountTHing: 0.5
-    - _NoiseScale: 10
+    - _NoiseScale: 300
     - _OpaqueCullMode: 2
     - _QueueControl: 1
     - _QueueOffset: 0
