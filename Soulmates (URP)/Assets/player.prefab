@@ -228,7 +228,19 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1759604738}
+        m_TargetAssemblyTypeName: MoveProp, Assembly-CSharp
+        m_MethodName: OnSelectProp
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 924a6c22-d763-4dbc-bafd-a96cbb66e91a
     m_ActionName: New action map/A Button
   - m_PersistentCalls:
@@ -236,7 +248,19 @@ MonoBehaviour:
     m_ActionId: 708a7ad7-79c8-4157-a702-7008244b59c8
     m_ActionName: New action map/B Button
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1759604738}
+        m_TargetAssemblyTypeName: MoveProp, Assembly-CSharp
+        m_MethodName: OnGrab
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 6e1fc200-18f8-4f30-b853-dc246044ae41
     m_ActionName: New action map/Right Trigger
   - m_PersistentCalls:
@@ -256,7 +280,19 @@ MonoBehaviour:
     m_ActionId: 8695a2d5-0913-4ad9-b3ed-1fb47f934159
     m_ActionName: New action map/Right Grip
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1759604738}
+        m_TargetAssemblyTypeName: MoveProp, Assembly-CSharp
+        m_MethodName: TransformProp
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: ca408e5a-37c3-4a76-a718-f2c901ab7761
     m_ActionName: New action map/Right Stick
   - m_PersistentCalls:
@@ -979,6 +1015,7 @@ GameObject:
   - component: {fileID: 3853733099553438695}
   - component: {fileID: 5453345868452958141}
   - component: {fileID: 8274875991621514684}
+  - component: {fileID: 1759604738}
   m_Layer: 0
   m_Name: QuestRightController
   m_TagString: Untagged
@@ -1122,6 +1159,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerDummy: {fileID: 1704002749013630752}
   lr: {fileID: 5453345868452958141}
+--- !u!114 &1759604738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4481333943810679133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84cb1277d91e4a94d93a26fd38c12052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  propInHand: {fileID: 0}
+  grabableLayer:
+    serializedVersion: 2
+    m_Bits: 192
+  placeableLayer:
+    serializedVersion: 2
+    m_Bits: 129
 --- !u!1 &4689502142123312426
 GameObject:
   m_ObjectHideFlags: 0
