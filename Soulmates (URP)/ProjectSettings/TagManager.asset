@@ -4,8 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - letter
-  - S
+  - Floor
   layers:
   - Default
   - TransparentFX
@@ -13,11 +12,11 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Prop
+  - Prop-On-Prop
+  - Floor
+  - Ceiling
+  - Wall
   - 
   - 
   - 
