@@ -35,11 +35,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - MainNormal:
-        m_Texture: {fileID: 2800000, guid: 826243d38d1f547489a4cdfc67f59d72, type: 3}
+        m_Texture: {fileID: 2800000, guid: 85375779183b0c74d9f1d59843d58ff7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Secondary_Normal:
-        m_Texture: {fileID: 2800000, guid: 85375779183b0c74d9f1d59843d58ff7, type: 3}
+        m_Texture: {fileID: 2800000, guid: 826243d38d1f547489a4cdfc67f59d72, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -100,9 +100,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - NormalStrenght: 0.001
+    - NormalStrenght: 2
     - Smoothness: 1
-    - Vector1_c3c9c781e5b843d3be4e85d0fbd1e76d: 0.01
+    - Vector1_c3c9c781e5b843d3be4e85d0fbd1e76d: 0.001
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -110,7 +110,7 @@ Material:
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
-    - _Depth: 0.1
+    - _Depth: -0.1
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -133,7 +133,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Shallow_water: {r: 0.3523051, g: 0.46479082, b: 0.8584906, a: 1}
+    - Shallow_water: {r: 0.6556604, g: 0.73307014, b: 1, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Deep_Water: {r: 1, g: 1, b: 1, a: 1}
