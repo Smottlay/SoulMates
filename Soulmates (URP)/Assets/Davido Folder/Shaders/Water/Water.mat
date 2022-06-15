@@ -100,9 +100,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - NormalStrenght: 2
-    - Smoothness: 1
-    - Vector1_c3c9c781e5b843d3be4e85d0fbd1e76d: 0.001
+    - NormalStrenght: 0.293
+    - Smoothness: 0.671
+    - Vector1_c3c9c781e5b843d3be4e85d0fbd1e76d: 0.02
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
