@@ -18,7 +18,16 @@ SpeedTreeImporter:
     enableHue: 1
     enableSubsurface: 1
     windQuality: 4
-  - height: 0.9623059
+  - height: 0.999
+    castShadows: 1
+    receiveShadows: 1
+    useLightProbes: 1
+    reflectionProbeUsage: 1
+    enableBump: 1
+    enableHue: 1
+    enableSubsurface: 1
+    windQuality: 2
+  - height: 0.3197104
     castShadows: 1
     receiveShadows: 1
     useLightProbes: 1
@@ -27,16 +36,7 @@ SpeedTreeImporter:
     enableHue: 1
     enableSubsurface: 1
     windQuality: 4
-  - height: 0.01
-    castShadows: 1
-    receiveShadows: 1
-    useLightProbes: 1
-    reflectionProbeUsage: 1
-    enableBump: 1
-    enableHue: 1
-    enableSubsurface: 1
-    windQuality: 4
-  enableSmoothLODTransition: 1
+  enableSmoothLODTransition: 0
   animateCrossFading: 1
   billboardTransitionCrossFadeWidth: 0.25
   fadeOutWidth: 0.25
