@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Desing Data", menuName = "ScriptableObjects/Data/Design Data")]
 public class SoulmateDesingData : ScriptableObject
 {
-    public int shapeIndex;
+    public string shape;
     public int floorTextureIndex;
     public int wallTextrureIndex;
     public int ceilingTextureIndex;
