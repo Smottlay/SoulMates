@@ -12,9 +12,7 @@ public class DayNightCycle : MonoBehaviour
     float tijdUren;
     float tijdMinuten;
 
-    // Update is called once per frame
-    void Update()
-    {
+    void ChangeTime() {
         tijdUren = slider.value / 60f;
         float rawMinuten = tijdUren - Mathf.Floor(tijdUren);
         tijdUren = Mathf.Floor(tijdUren);
@@ -22,6 +20,26 @@ public class DayNightCycle : MonoBehaviour
 
         float procentVanDag = slider.value / 14.4f;
         directinalLight.transform.rotation = Quaternion.Euler(03.6f * procentVanDag, 0, 0);
-        tijdText.text = tijdUren.ToString() + ":" + tijdMinuten.ToString();
+        if (tijdMinuten <= 9f) {
+            tijdText.text = tijdUren.ToString() + ":0" + tijdMinuten.ToString();
+        } else {
+            tijdText.text = tijdUren.ToString() + ":" + tijdMinuten.ToString();
+        }
+    }
+    public void MinuteMeer() {
+        slider.value ++;
+        ChangeTime();
+    }
+    public void MinuteMinder() {
+        slider.value --;
+        ChangeTime();
+    }
+    public void UurMeer() {
+        slider.value += 60;
+        ChangeTime();
+    }
+    public void UurMinder() {
+        slider.value -= 60;
+        ChangeTime();
     }
 }
