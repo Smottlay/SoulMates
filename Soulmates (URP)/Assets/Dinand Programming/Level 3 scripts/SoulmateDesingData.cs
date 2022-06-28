@@ -16,7 +16,7 @@ public class SoulmateDesingData : ScriptableObject
 [System.Serializable]
 public class PropInfo
 {
-    public int propIndex;
+    public string propName;
     public Vector3 position;
     public Quaternion rotation;
     public Vector3 scale;
@@ -26,14 +26,14 @@ public class PropInfo
     }
     public PropInfo(PropInfo newProp)
     {
-        this.propIndex = newProp.propIndex;
+        this.propName = newProp.propName;
         this.position = newProp.position;
         this.rotation = newProp.rotation;
         this.scale = newProp.scale;
     }
-    public PropInfo(int index, Vector3 pos, Quaternion rot, Vector3 scl)
+    public PropInfo(string name, Vector3 pos, Quaternion rot, Vector3 scl)
     {
-        this.propIndex = index;
+        this.propName = name;
         this.position = pos;
         this.rotation = rot;
         this.scale = scl;

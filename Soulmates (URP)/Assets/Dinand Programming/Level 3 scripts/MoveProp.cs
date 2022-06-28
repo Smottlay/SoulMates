@@ -9,6 +9,7 @@ public class MoveProp : MonoBehaviour
     public LayerMask grabableLayer;
     public LayerMask placeableLayer;
     bool canMove;
+    bool delete;
 
     public void OnGrab(InputAction.CallbackContext callbackContext)
     {
@@ -27,9 +28,11 @@ public class MoveProp : MonoBehaviour
         if (callbackContext.started && !propInHand && Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 100f, grabableLayer))
         {
             propInHand = hit.collider.GetComponentInParent<Prop>();
+            propInHand.OnSelectProp();
         }
         else if (callbackContext.started && propInHand)
         {
+            propInHand.OnDeselectProp();
             propInHand = null;
             canMove = false;
         }
@@ -56,6 +59,33 @@ public class MoveProp : MonoBehaviour
             {
                 propInHand.transform.Rotate(0, -transformVector.x, 0);
                 propInHand.rot.y -= transformVector.x;
+            }
+        }
+    }
+
+    public void DeleteProp(InputAction.CallbackContext callbackContext)
+    {
+        if (callbackContext.started)
+        {
+            delete = true;
+            StartCoroutine(Deleting());
+        }
+        else if (callbackContext.canceled)
+        {
+            delete = false;
+        }
+    }
+
+    IEnumerator Deleting()
+    {
+        float f = 0;
+        while (delete)
+        {
+            f += Time.fixedDeltaTime;
+            yield return new WaitForFixedUpdate();
+            if (f > 2 && delete == true)
+            {
+                Destroy(propInHand.gameObject);
             }
         }
     }
