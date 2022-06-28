@@ -12,7 +12,7 @@ public class DayNightCycle : MonoBehaviour
     float tijdUren;
     float tijdMinuten;
 
-    void ChangeTime() {
+    public void ChangeTime() {
         tijdUren = slider.value / 60f;
         float rawMinuten = tijdUren - Mathf.Floor(tijdUren);
         tijdUren = Mathf.Floor(tijdUren);
