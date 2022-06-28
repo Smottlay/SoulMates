@@ -39,11 +39,11 @@ public class SaveData : MonoBehaviour
         {
             if (prop.propType == PropType.Window)
             {
-                data.windows.Add(new PropInfo(prop.propIndex, prop.transform.localPosition, prop.transform.rotation, prop.transform.localScale));
+                data.windows.Add(new PropInfo(prop.propName, prop.transform.localPosition, prop.transform.rotation, prop.transform.localScale));
             }
             else
             {
-                data.props.Add(new PropInfo(prop.propIndex, prop.transform.localPosition, prop.transform.rotation, prop.transform.localScale));
+                data.props.Add(new PropInfo(prop.propName, prop.transform.localPosition, prop.transform.rotation, prop.transform.localScale));
             }
         }
         SaveNewData();
