@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class ChangeWallMaterial : MonoBehaviour
 {
-    public Material wallMaterial;
-    public static Material[] materials;
-    int currentMaterial;
+    public MeshRenderer wallMaterial;
+    public Material[] materials;
+    public int currentMaterial;
 
     private void Start()
     {
         currentMaterial = 0;
-        wallMaterial = materials[0];
+        wallMaterial.materials[0] = materials[0];
     }
     public void NextMat()
     {
@@ -20,7 +20,7 @@ public class ChangeWallMaterial : MonoBehaviour
         {
             currentMaterial = 0;
         }
-        wallMaterial = materials[currentMaterial];
+        wallMaterial.materials[0] = materials[currentMaterial];
     }
     public void PrevMat()
     {
@@ -29,12 +29,12 @@ public class ChangeWallMaterial : MonoBehaviour
             currentMaterial = materials.Length;
         }
         currentMaterial--;
-        wallMaterial = materials[currentMaterial];
+        wallMaterial.materials[0] = materials[currentMaterial];
     }
 
     public void SelectMat(int mat)
     {
         currentMaterial = mat;
-        wallMaterial = materials[currentMaterial];
+        wallMaterial.materials[0] = materials[currentMaterial];
     }
 }
