@@ -7,26 +7,26 @@ using UnityEngine.UI;
 public class TutorialManager : MonoBehaviour
 {
     public GameObject[] panels;
-    public GameObject[] turorialObject;
     public float welcomeTimer;
    
     private RaycastHit hit;
-    private bool tutBool;
     private bool timerBool;
+    public GameObject tutorialObjects;
 
     private void Awake()
     {
-        tutBool = false;
         timerBool = true;
+        tutorialObjects.transform.parent = this.gameObject.transform;
     }
     private void Update()
-    {
-        TutorialObjects();
+    { 
         WelcomeTutorial();
         HeadTutorial();
+        /*
         GrabTutorial();
         PlacementTutorial();
         TeleportationTutorial();
+        */
     }
 
     private void WelcomeTutorial()
@@ -39,8 +39,9 @@ public class TutorialManager : MonoBehaviour
             {
                 panels[0].SetActive(false);
                 panels[1].SetActive(true);
-                tutBool = true;
                 timerBool = false;
+
+                tutorialObjects.transform.parent = null;
             }
         }
     }
@@ -51,43 +52,29 @@ public class TutorialManager : MonoBehaviour
         {
             if (hit.collider.CompareTag("HeadCheck"))
             {
-                tutBool = false;
                 panels[1].SetActive(false);
-                panels[2].SetActive(true); 
+                panels[2].SetActive(true);
+                tutorialObjects.gameObject.SetActive(false);
+                Debug.Log("destroyed");
             }
         }
     }
 
     private void GrabTutorial()
     {
-        
+        panels[2].SetActive(false);
+        panels[3].SetActive(true);
     }
 
     private void PlacementTutorial()
     {
-
+        panels[3].SetActive(false);
+        panels[4].SetActive(true);
     }
 
     private void TeleportationTutorial()
     {
-
-    }
-
-    private void TutorialObjects()
-    {
-        if(tutBool)
-        {
-            foreach (GameObject tutOBJ in turorialObject)
-            {
-                tutOBJ.SetActive(true);
-            }
-        }
-        else if (!tutBool)
-        {
-            foreach (GameObject tutOBJ in turorialObject)
-            {
-                tutOBJ.SetActive(false);
-            }
-        }
+        panels[4].SetActive(false);
+        panels[5].SetActive(true);
     }
 }
