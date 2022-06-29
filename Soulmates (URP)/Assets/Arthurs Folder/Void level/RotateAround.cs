@@ -17,7 +17,6 @@ public class RotateAround : MonoBehaviour
         } else {
             transform.RotateAround(target.transform.position, Vector3.down, Random.Range(30, 60) * Time.deltaTime);
         }
-        Debug.Log(leftOrRight);
 
     }
 
