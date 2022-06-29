@@ -203,11 +203,11 @@ Material:
     - _NoiseRemap: {r: 1.08, g: 0.62, b: 0.74, a: 0}
     - _Noise_Remap: {r: 1.18, g: 2.59, b: 1.33, a: 0.48}
     - _PRI_Color: {r: 1, g: 1, b: 1, a: 0}
-    - _Pri_Color: {r: 1, g: 0.6084906, b: 0.6568518, a: 1}
+    - _Pri_Color: {r: 0.60784316, g: 0.9811973, b: 1, a: 1}
     - _RotateProj: {r: 1, g: 1, b: 1, a: 90}
     - _Rotate_Projection: {r: 1, g: 1, b: 1, a: 100}
     - _SEC_Color: {r: 0.34282663, g: 0.6064125, b: 0.6792453, a: 0}
-    - _Sec_Color: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 1}
+    - _Sec_Color: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &3673933466314192831
