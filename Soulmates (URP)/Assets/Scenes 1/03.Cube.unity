@@ -609,6 +609,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 9dd2ab2099b3e2246a38e9fa848ab201, type: 2}
   - {fileID: 2100000, guid: 3f8d18afbce8f97499adde808c041355, type: 2}
   currentMaterial: 0
+  maskScript: {fileID: 875809487}
 --- !u!114 &875809485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -628,6 +629,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 7bcde327021f9fd469007151095c5571, type: 2}
   - {fileID: 2100000, guid: c6f116057c504af4ab5949fae4a0a7fc, type: 2}
   currentMaterial: 0
+  maskScript: {fileID: 0}
 --- !u!114 &875809486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -712,6 +714,34 @@ MonoBehaviour:
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &875809487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875809480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7037c42e3099994b95a558e11574a68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maskedOBJ:
+  - {fileID: 875809480}
+--- !u!64 &875809489
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875809480}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2186430941476567602, guid: 41de658266591d048b10960f008535bc, type: 3}
 --- !u!64 &875809490
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1425,13 +1455,58 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5644431962387416224, guid: ba5f755bfb74a9f45a4721854016eb46,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644431962387416224, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644431962387416224, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 875809484}
     - target: {fileID: 5644431962387416224, guid: ba5f755bfb74a9f45a4721854016eb46,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 875809487}
+    - target: {fileID: 5644431962387416224, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644431962387416224, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: PrevMat
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644431962387416224, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: UpdateMat
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644431962387416224, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DepthMaskScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644431962387416224, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7537286273696958856, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7537286273696958856, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7537286273696958856, guid: ba5f755bfb74a9f45a4721854016eb46,
         type: 3}
@@ -1440,8 +1515,33 @@ PrefabInstance:
       objectReference: {fileID: 875809484}
     - target: {fileID: 7537286273696958856, guid: ba5f755bfb74a9f45a4721854016eb46,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 875809487}
+    - target: {fileID: 7537286273696958856, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7537286273696958856, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: NextMat
+      objectReference: {fileID: 0}
+    - target: {fileID: 7537286273696958856, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: UpdateMat
+      objectReference: {fileID: 0}
+    - target: {fileID: 7537286273696958856, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DepthMaskScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7537286273696958856, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8762184711513469024, guid: ba5f755bfb74a9f45a4721854016eb46,
         type: 3}
@@ -2487,7 +2587,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: e632b4cb6a5930245bdde1a79e939825,
         type: 3}
       propertyPath: m_CastShadows
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: e632b4cb6a5930245bdde1a79e939825,
         type: 3}
@@ -2542,3 +2642,4 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 7bcde327021f9fd469007151095c5571, type: 2}
   - {fileID: 2100000, guid: c6f116057c504af4ab5949fae4a0a7fc, type: 2}
   currentMaterial: 0
+  maskScript: {fileID: 0}

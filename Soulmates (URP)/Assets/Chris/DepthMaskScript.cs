@@ -5,7 +5,7 @@ using UnityEngine;
 public class DepthMaskScript : MonoBehaviour
 {
     public GameObject[] maskedOBJ;
-    void Start()
+    public void UpdateMat()
     {
         for (int i = 0; i < maskedOBJ.Length; i++)
         {
