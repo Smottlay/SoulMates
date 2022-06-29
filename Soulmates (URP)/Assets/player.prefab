@@ -244,7 +244,19 @@ MonoBehaviour:
     m_ActionId: 924a6c22-d763-4dbc-bafd-a96cbb66e91a
     m_ActionName: New action map/A Button
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1759604738}
+        m_TargetAssemblyTypeName: MoveProp, Assembly-CSharp
+        m_MethodName: DeleteProp
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 708a7ad7-79c8-4157-a702-7008244b59c8
     m_ActionName: New action map/B Button
   - m_PersistentCalls:
