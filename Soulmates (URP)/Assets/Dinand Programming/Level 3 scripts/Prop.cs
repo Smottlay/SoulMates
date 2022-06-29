@@ -15,6 +15,7 @@ public class Prop : MonoBehaviour
     private void Start()
     {
         lookAt = FindObjectOfType<SwitchOnMenu>().GetComponentInChildren<Camera>().transform;
+        OnSelectProp();
     }
     public void OnSelectProp()
     {

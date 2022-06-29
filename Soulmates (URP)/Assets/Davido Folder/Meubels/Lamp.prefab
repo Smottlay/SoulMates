@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 594282701057103068}
   - component: {fileID: 3448534374817718294}
   - component: {fileID: 3925201034469809815}
+  - component: {fileID: 1244617757559936761}
   m_Layer: 6
   m_Name: Lamp
   m_TagString: Untagged
@@ -104,6 +105,20 @@ MonoBehaviour:
     m_Bits: 384
   rot: {x: 0, y: 0, z: 0}
   selection: {fileID: 1276697292834052214}
+--- !u!64 &1244617757559936761
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3808738850463039939}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5053925668127403250, guid: e509ea9b92b9c57419ae36a00db959c8, type: 3}
 --- !u!1001 &1602441513737846685
 PrefabInstance:
   m_ObjectHideFlags: 0

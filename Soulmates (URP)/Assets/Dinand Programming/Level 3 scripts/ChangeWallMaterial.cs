@@ -7,11 +7,16 @@ public class ChangeWallMaterial : MonoBehaviour
     public MeshRenderer wallMaterial;
     public Material[] materials;
     public int currentMaterial;
+    public DepthMaskScript maskScript;
 
     private void Start()
     {
         currentMaterial = 0;
         wallMaterial.material = materials[0];
+        if (maskScript)
+        {
+            maskScript.UpdateMat();
+        }
     }
     public void NextMat()
     {
