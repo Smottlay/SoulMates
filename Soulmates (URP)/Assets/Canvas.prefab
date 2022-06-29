@@ -2885,7 +2885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcc3e0e2c52cb064aaad61b1df67d8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prop: {fileID: 0}
+  prop: {fileID: 3808738850463039939, guid: 7b7cb82ee40a1d44f9ab341ab7786cfd, type: 3}
   moveProp: {fileID: 0}
   newParent: {fileID: 0}
 --- !u!1 &8976500134718988303
