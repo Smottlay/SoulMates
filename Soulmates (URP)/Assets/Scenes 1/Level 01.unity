@@ -834,10 +834,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
-  bigLetters: {fileID: 1162311486}
+  bigLetters: {fileID: 1450388663}
+  bigLettersAnim: {fileID: 1716729258}
   disolveAnimation: {fileID: 3800498228129385796}
-  disolveShader: {fileID: 2736629346798780345}
-  skipLetters: 0
+  disolveShader: {fileID: 1716729256}
   dissolved: 0
 --- !u!65 &384898459
 BoxCollider:
@@ -891,6 +891,12 @@ Transform:
   m_Father: {fileID: 841119057}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &454133162 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fa0f7e074428bf543868aa13af923b66,
+    type: 3}
+  m_PrefabInstance: {fileID: 1532927518}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &467912542 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7635529257101526988, guid: bc190574b4181ba49946f2eff7e9c141,
@@ -943,7 +949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   welcomeTimer: 10
-  plaatletters: {fileID: 0}
+  plaatletters: {fileID: 2084911116}
   panels:
   - {fileID: 900178111}
   - {fileID: 703208398}
@@ -6418,10 +6424,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
-  bigLetters: {fileID: 1162311486}
+  bigLetters: {fileID: 1450388663}
+  bigLettersAnim: {fileID: 1716729258}
   disolveAnimation: {fileID: 7787591567186949435}
-  disolveShader: {fileID: 2736629346798780345}
-  skipLetters: 0
+  disolveShader: {fileID: 1716729256}
   dissolved: 0
 --- !u!65 &732791558
 BoxCollider:
@@ -6695,10 +6701,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
-  bigLetters: {fileID: 1162311486}
+  bigLetters: {fileID: 1450388663}
+  bigLettersAnim: {fileID: 1716729258}
   disolveAnimation: {fileID: 8869388660985967100}
-  disolveShader: {fileID: 2736629346798780345}
-  skipLetters: 0
+  disolveShader: {fileID: 1716729256}
   dissolved: 0
 --- !u!65 &746888447
 BoxCollider:
@@ -7426,10 +7432,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
-  bigLetters: {fileID: 1162311486}
+  bigLetters: {fileID: 1450388663}
+  bigLettersAnim: {fileID: 1716729258}
   disolveAnimation: {fileID: 4013487463817663730}
-  disolveShader: {fileID: 2736629346798780345}
-  skipLetters: 0
+  disolveShader: {fileID: 1716729256}
   dissolved: 0
 --- !u!65 &1228923672
 BoxCollider:
@@ -7985,10 +7991,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
-  bigLetters: {fileID: 1162311486}
+  bigLetters: {fileID: 1450388663}
+  bigLettersAnim: {fileID: 1716729258}
   disolveAnimation: {fileID: 7571962287069715194}
-  disolveShader: {fileID: 2736629346798780345}
-  skipLetters: 0
+  disolveShader: {fileID: 1716729256}
   dissolved: 0
 --- !u!65 &1464299989
 BoxCollider:
@@ -8115,6 +8121,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa0f7e074428bf543868aa13af923b66,
         type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fa0f7e074428bf543868aa13af923b66,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -8126,6 +8137,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1532927518}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1532927522
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454133162}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6e15e455cbe004e4baba91442a4ee9c8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1549256245
 GameObject:
   m_ObjectHideFlags: 0
@@ -8437,6 +8468,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d1b36d6d8fc9f6749a3c48e1275746b9,
         type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d1b36d6d8fc9f6749a3c48e1275746b9,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -8445,6 +8481,12 @@ PrefabInstance:
 --- !u!4 &1716729255 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d1b36d6d8fc9f6749a3c48e1275746b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1716729254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1716729256 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: d1b36d6d8fc9f6749a3c48e1275746b9,
     type: 3}
   m_PrefabInstance: {fileID: 1716729254}
   m_PrefabAsset: {fileID: 0}
@@ -8473,6 +8515,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8610161314585705343, guid: d88ae82589a1d98469c1eea04a1e3d00,
     type: 3}
   m_PrefabInstance: {fileID: 8682529519491141254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1748284049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 161887ea70853af4eb9512da6beb2b25,
+    type: 3}
+  m_PrefabInstance: {fileID: 2047040184}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1814259244
 GameObject:
@@ -8723,10 +8771,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
-  bigLetters: {fileID: 1162311486}
+  bigLetters: {fileID: 454133162}
+  bigLettersAnim: {fileID: 1532927522}
   disolveAnimation: {fileID: 2476720199844081835}
-  disolveShader: {fileID: 2736629346798780345}
-  skipLetters: 0
+  disolveShader: {fileID: 1716729256}
   dissolved: 0
 --- !u!65 &1905913967
 BoxCollider:
@@ -13715,6 +13763,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 161887ea70853af4eb9512da6beb2b25,
         type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 161887ea70853af4eb9512da6beb2b25,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -13726,6 +13779,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2047040184}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &2047040188
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748284049}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6e15e455cbe004e4baba91442a4ee9c8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2083432230
 GameObject:
   m_ObjectHideFlags: 0
@@ -13922,10 +13995,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
-  bigLetters: {fileID: 1162311486}
+  bigLetters: {fileID: 1450388663}
+  bigLettersAnim: {fileID: 1716729258}
   disolveAnimation: {fileID: 4538090845281590894}
-  disolveShader: {fileID: 2736629346798780345}
-  skipLetters: 0
+  disolveShader: {fileID: 1716729256}
   dissolved: 0
 --- !u!65 &2084911119
 BoxCollider:
@@ -13940,26 +14013,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.013699369, y: 0.054576844, z: 0.013734905}
   m_Center: {x: 0.00000083399937, y: 0.027518779, z: -0.000000016996633}
---- !u!95 &2084911122
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2084911110}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: eb99a6a52b950a74583f3befb8d2c443, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2102140134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14444,10 +14497,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
-  bigLetters: {fileID: 1162311486}
+  bigLetters: {fileID: 1748284049}
+  bigLettersAnim: {fileID: 2047040188}
   disolveAnimation: {fileID: 3493355235253692422}
-  disolveShader: {fileID: 2736629346798780345}
-  skipLetters: 0
+  disolveShader: {fileID: 1716729256}
   dissolved: 0
 --- !u!65 &2123108918
 BoxCollider:
