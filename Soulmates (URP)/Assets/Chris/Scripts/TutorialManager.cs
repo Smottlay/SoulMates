@@ -9,27 +9,26 @@ using Unity.XR.OpenVR;
 public class TutorialManager : MonoBehaviour
 {
     public float welcomeTimer;
-    public PlaatsLetters plaatletters;
     public GameObject[] panels;
     public Material[] rightHighlightShader;
     public Material[] leftHighlightShader;
-    public CheckForLetter checkForLetter;
     public GameObject tutorialObjects;
+
+    public CheckForLetter checkForLetter;
+    public PlaatsLetters plaats;
 
     private RaycastHit hit;
     private bool timerBool;
-    private bool toggleShaderGrab;
-    private bool toggleTeleportShader;
-    private bool dissolvedConfirm;
+    private bool confirmDissolve;
     private bool holding;
     
 
     private void Awake()
     {
-        dissolvedConfirm = plaatletters.GetComponent<PlaatsLetters>().dissolved;
         timerBool = true;
         tutorialObjects.transform.parent = this.gameObject.transform;
         holding = checkForLetter.GetComponent<CheckForLetter>().isHoldingLetter;
+        confirmDissolve = plaats.GetComponent<PlaatsLetters>().dissolved;
 
         panels[2].GetComponent<UILerp>().enabled = false;
         panels[3].GetComponent<UILerp>().enabled = false;
@@ -39,7 +38,6 @@ public class TutorialManager : MonoBehaviour
         WelcomeTutorial();
         HeadTutorial();
         GrabTutorial();
-       //PlacementTutorial();
     }
 
     private void WelcomeTutorial()
@@ -69,7 +67,6 @@ public class TutorialManager : MonoBehaviour
                 panels[2].SetActive(true);
                 tutorialObjects.gameObject.SetActive(false);
                 Debug.Log("destroyed");
-                toggleShaderGrab = true;
             }
         }
     }
@@ -77,17 +74,29 @@ public class TutorialManager : MonoBehaviour
     private void GrabTutorial()
     {
         
-        if (!holding)
+        if (!holding & !confirmDissolve)
         {
             panels[2].SetActive(true);
             panels[3].SetActive(false);
             rightHighlightShader[1].SetInt("_ToggleShader", 1);
+            leftHighlightShader[1].SetInt("_ToggleShader", 1);
         }
-        else if (holding)
+        else if (holding & !confirmDissolve)
         {
             panels[2].SetActive(false);
             panels[3].SetActive(true);
             rightHighlightShader[1].SetInt("_ToggleShader", 0);
+            leftHighlightShader[1].SetInt("_ToggleShader", 0);
+        }
+
+        if (confirmDissolve)
+        {
+            rightHighlightShader[1].SetInt("_ToggleShader", 0);
+            leftHighlightShader[1].SetInt("_ToggleShader", 0);
+            panels[2].SetActive(false);
+            panels[3].SetActive(false);
+
+            panels[4].SetActive(true);
         }
     }
 
