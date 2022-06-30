@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.014053048, g: 0.064411305, b: 0.18034896, a: 1}
+  m_IndirectSpecularColor: {r: 0.014053097, g: 0.064411305, b: 0.18034916, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -835,7 +835,7 @@ MonoBehaviour:
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
   bigLetters: {fileID: 1162311486}
-  disolveAnimation: {fileID: 2084911122}
+  disolveAnimation: {fileID: 3800498228129385796}
   disolveShader: {fileID: 2736629346798780345}
   skipLetters: 0
   dissolved: 0
@@ -6419,7 +6419,7 @@ MonoBehaviour:
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
   bigLetters: {fileID: 1162311486}
-  disolveAnimation: {fileID: 2084911122}
+  disolveAnimation: {fileID: 7787591567186949435}
   disolveShader: {fileID: 2736629346798780345}
   skipLetters: 0
   dissolved: 0
@@ -6696,7 +6696,7 @@ MonoBehaviour:
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
   bigLetters: {fileID: 1162311486}
-  disolveAnimation: {fileID: 2084911122}
+  disolveAnimation: {fileID: 8869388660985967100}
   disolveShader: {fileID: 2736629346798780345}
   skipLetters: 0
   dissolved: 0
@@ -7242,7 +7242,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1162311487
 Transform:
   m_ObjectHideFlags: 0
@@ -7427,7 +7427,7 @@ MonoBehaviour:
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
   bigLetters: {fileID: 1162311486}
-  disolveAnimation: {fileID: 2084911122}
+  disolveAnimation: {fileID: 4013487463817663730}
   disolveShader: {fileID: 2736629346798780345}
   skipLetters: 0
   dissolved: 0
@@ -7814,6 +7814,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1395902641}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1450388663 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d1b36d6d8fc9f6749a3c48e1275746b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1716729254}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1464299980 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4d28d4b3a4d3e3e418125a204c681390,
@@ -7980,7 +7986,7 @@ MonoBehaviour:
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
   bigLetters: {fileID: 1162311486}
-  disolveAnimation: {fileID: 2084911122}
+  disolveAnimation: {fileID: 7571962287069715194}
   disolveShader: {fileID: 2736629346798780345}
   skipLetters: 0
   dissolved: 0
@@ -8442,6 +8448,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1716729254}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1716729258
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450388663}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6e15e455cbe004e4baba91442a4ee9c8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1733402558 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8610161314585705343, guid: d88ae82589a1d98469c1eea04a1e3d00,
@@ -8698,7 +8724,7 @@ MonoBehaviour:
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
   bigLetters: {fileID: 1162311486}
-  disolveAnimation: {fileID: 2084911122}
+  disolveAnimation: {fileID: 2476720199844081835}
   disolveShader: {fileID: 2736629346798780345}
   skipLetters: 0
   dissolved: 0
@@ -14419,7 +14445,7 @@ MonoBehaviour:
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
   bigLetters: {fileID: 1162311486}
-  disolveAnimation: {fileID: 2084911122}
+  disolveAnimation: {fileID: 3493355235253692422}
   disolveShader: {fileID: 2736629346798780345}
   skipLetters: 0
   dissolved: 0
@@ -14656,8 +14682,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909427139302096155}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.5670006, y: 0.156, z: 0.06589854}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.5670025, y: 0.15600002, z: 0.065899916}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
