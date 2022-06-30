@@ -11,13 +11,14 @@ GameObject:
   - component: {fileID: 222235}
   - component: {fileID: 222237}
   - component: {fileID: 222236}
+  - component: {fileID: 503522477}
   m_Layer: 5
   m_Name: RawImage (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &222235
 RectTransform:
   m_ObjectHideFlags: 0
@@ -73,6 +74,18 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!225 &503522477
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222234}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &105669856
 GameObject:
   m_ObjectHideFlags: 0
@@ -84,6 +97,7 @@ GameObject:
   - component: {fileID: 105669857}
   - component: {fileID: 105669859}
   - component: {fileID: 105669858}
+  - component: {fileID: 985144005}
   m_Layer: 5
   m_Name: RawImage
   m_TagString: Untagged
@@ -146,6 +160,18 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!225 &985144005
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105669856}
+  m_Enabled: 1
+  m_Alpha: 0.8
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &308939808
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,13 +263,14 @@ GameObject:
   - component: {fileID: 492040590}
   - component: {fileID: 492040592}
   - component: {fileID: 492040591}
+  - component: {fileID: 1536876631}
   m_Layer: 5
   m_Name: RawImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &492040590
 RectTransform:
   m_ObjectHideFlags: 0
@@ -299,6 +326,18 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!225 &1536876631
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492040589}
+  m_Enabled: 1
+  m_Alpha: 0.8
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &516629813
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,13 +349,14 @@ GameObject:
   - component: {fileID: 516629814}
   - component: {fileID: 516629816}
   - component: {fileID: 516629815}
+  - component: {fileID: 2010511700}
   m_Layer: 5
   m_Name: RawImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &516629814
 RectTransform:
   m_ObjectHideFlags: 0
@@ -372,6 +412,18 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!225 &2010511700
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516629813}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &775753219
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,13 +435,14 @@ GameObject:
   - component: {fileID: 775753220}
   - component: {fileID: 775753222}
   - component: {fileID: 775753221}
+  - component: {fileID: 1555185917}
   m_Layer: 5
   m_Name: RawImage (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &775753220
 RectTransform:
   m_ObjectHideFlags: 0
@@ -445,6 +498,18 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!225 &1555185917
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775753219}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &861638581
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,7 +636,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 861638583}
         m_TargetAssemblyTypeName: GoToScene, Assembly-CSharp
-        m_MethodName: SwithScene
+        m_MethodName: SwitchPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -594,6 +659,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: 1
+  panels:
+  - {fileID: 8976500135807621637}
+  - {fileID: 8976500134349655057}
 --- !u!1 &273554346319135031
 GameObject:
   m_ObjectHideFlags: 0
@@ -2289,6 +2357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: 1
+  panels: []
 --- !u!1 &3194623882917034636
 GameObject:
   m_ObjectHideFlags: 0
@@ -2813,6 +2882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: 0
+  panels: []
 --- !u!114 &8343918787994317378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3091,7 +3161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8976500134411963147
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4427,7 +4497,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8976500135807621634
 RectTransform:
   m_ObjectHideFlags: 0
