@@ -14307,7 +14307,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 7f00b5d832a285144bf09de47d7c7cfd, type: 2}
   tutorialObjects: {fileID: 9041971357852050943}
   checkForLetter: {fileID: 1832876254}
-  plaats: {fileID: 2084911116}
+  plaats: {fileID: 1748284049}
 --- !u!1 &2083432230
 GameObject:
   m_ObjectHideFlags: 0
@@ -16962,6 +16962,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GrabPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8610161314585705343, guid: d88ae82589a1d98469c1eea04a1e3d00,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8950518005675106757, guid: d88ae82589a1d98469c1eea04a1e3d00,
         type: 3}

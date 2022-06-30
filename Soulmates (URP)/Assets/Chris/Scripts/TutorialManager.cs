@@ -15,7 +15,7 @@ public class TutorialManager : MonoBehaviour
     public GameObject tutorialObjects;
 
     public CheckForLetter checkForLetter;
-    public PlaatsLetters plaats;
+    public GameObject plaats;
 
     private RaycastHit hit;
     private bool timerBool;
@@ -28,14 +28,20 @@ public class TutorialManager : MonoBehaviour
     {
         timerBool = true;
         tutorialObjects.transform.parent = this.gameObject.transform;
-        holding = checkForLetter.GetComponent<CheckForLetter>().isHoldingLetter;
-        confirmDissolve = plaats.GetComponent<PlaatsLetters>().dissolved;
+        
 
-        panels[2].GetComponent<UILerp>().enabled = false;
-        panels[3].GetComponent<UILerp>().enabled = false;
+        
     }
     private void Update()
-    { 
+    {
+        if (!holding)
+        {
+            holding = checkForLetter.GetComponent<CheckForLetter>().isHoldingLetter;
+        }
+        else if (plaats.activeInHierarchy == true)
+        {
+            confirmDissolve = true;
+        }
         WelcomeTutorial();
         HeadTutorial();
         GrabTutorial();
