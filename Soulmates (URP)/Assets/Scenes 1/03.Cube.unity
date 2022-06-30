@@ -1338,6 +1338,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1653476008}
     m_Modifications:
+    - target: {fileID: 222234, guid: ba5f755bfb74a9f45a4721854016eb46, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 105669856, guid: ba5f755bfb74a9f45a4721854016eb46, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 492040589, guid: ba5f755bfb74a9f45a4721854016eb46, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 516629813, guid: ba5f755bfb74a9f45a4721854016eb46, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 775753219, guid: ba5f755bfb74a9f45a4721854016eb46, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1341770462999932069, guid: ba5f755bfb74a9f45a4721854016eb46,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1553,6 +1573,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: PrevMat
       objectReference: {fileID: 0}
+    - target: {fileID: 8976500134349655057, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8976500134411963142, guid: ba5f755bfb74a9f45a4721854016eb46,
         type: 3}
       propertyPath: m_PresetInfoIsWorld
@@ -1567,6 +1592,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8976500134411963146, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8976500134411963147, guid: ba5f755bfb74a9f45a4721854016eb46,
         type: 3}
@@ -1758,6 +1788,11 @@ PrefabInstance:
       propertyPath: newParent
       value: 
       objectReference: {fileID: 875809479}
+    - target: {fileID: 8976500135875349284, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8976500136020223344, guid: ba5f755bfb74a9f45a4721854016eb46,
         type: 3}
       propertyPath: moveProp
