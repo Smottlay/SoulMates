@@ -148,7 +148,7 @@ Material:
     - _Noise_Power: 9.96
     - _Noise_Size: 2.95
     - _Noise_Speed: 5.82
-    - _Normal_Size: -1.03
+    - _Normal_Size: -2.31
     - _OcclusionStrength: 1
     - _OpaqueCullMode: 2
     - _Parallax: 0.02
