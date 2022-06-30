@@ -958,7 +958,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   welcomeTimer: 10
-  plaatletters: {fileID: 2084911116}
   panels:
   - {fileID: 900178111}
   - {fileID: 703208398}
@@ -977,8 +976,9 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 7d5846cbc226bc74fa026ef6dcd0537b, type: 2}
   - {fileID: 2100000, guid: 1a8b24b4872e44e418973c61bbb2643f, type: 2}
   - {fileID: 2100000, guid: 7f00b5d832a285144bf09de47d7c7cfd, type: 2}
-  checkForLetter: {fileID: 0}
   tutorialObjects: {fileID: 9041971357852050943}
+  checkForLetter: {fileID: 0}
+  plaats: {fileID: 0}
 --- !u!1 &490482460 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ac834acb63c385e4b81a2610a5c499f3,
@@ -14268,6 +14268,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shapeSceneId: 1
   shapeId: 1
+--- !u!1 &2054012907 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5797257916806251401, guid: 9876fb8a33f0b9446afce375816545e8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1863540923}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2054012912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054012907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60325008a157dc64bab492588d36a6ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  welcomeTimer: 10
+  panels:
+  - {fileID: 900178111}
+  - {fileID: 703208398}
+  - {fileID: 1733402558}
+  - {fileID: 1066082042}
+  - {fileID: 140291862}
+  rightHighlightShader:
+  - {fileID: 2100000, guid: f227a53b09abb7648bcba7da7192d6ac, type: 2}
+  - {fileID: 2100000, guid: b3879527ffa811b42bcae95a7dbbc7cb, type: 2}
+  - {fileID: 2100000, guid: e7a3589089a1a1443ba85c25e2ea4da5, type: 2}
+  - {fileID: 2100000, guid: 37e95129c67041d41bdc41cb2f545896, type: 2}
+  - {fileID: 2100000, guid: 4b56141262ac8f44fac8262be4332f39, type: 2}
+  leftHighlightShader:
+  - {fileID: 2100000, guid: 3c89ba07e40fc5344b1bbc000377293d, type: 2}
+  - {fileID: 2100000, guid: db5000785b76685438fad7ecde7fb0a7, type: 2}
+  - {fileID: 2100000, guid: 7d5846cbc226bc74fa026ef6dcd0537b, type: 2}
+  - {fileID: 2100000, guid: 1a8b24b4872e44e418973c61bbb2643f, type: 2}
+  - {fileID: 2100000, guid: 7f00b5d832a285144bf09de47d7c7cfd, type: 2}
+  tutorialObjects: {fileID: 9041971357852050943}
+  checkForLetter: {fileID: 1832876254}
+  plaats: {fileID: 0}
 --- !u!1 &2083432230
 GameObject:
   m_ObjectHideFlags: 0
