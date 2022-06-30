@@ -7,11 +7,12 @@ public class PlaatsLetters : MonoBehaviour
 {
     public GameObject lettersWithShader;
     public GameObject letters;
-    public GameObject bigLetters;
+    public GameObject[] bigLetters;
     public Animator bigLettersAnim;
     public Animator disolveAnimation;
     public Renderer disolveShader;
     public bool dissolved;
+    public static int lettersplaced;
 
     private void OnTriggerEnter(Collider other) {
         if(other.gameObject.name == this.gameObject.name) {
@@ -20,20 +21,28 @@ public class PlaatsLetters : MonoBehaviour
             Color newcolor = other.GetComponent<MeshRenderer>().material.color;
             newcolor.a = 255;
             other.GetComponent<MeshRenderer>().material.color = newcolor;
-            if (this.transform.parent.childCount <= 1) {
+            lettersplaced++;
+            if (lettersplaced == 8)
+            {
                 StartCoroutine(AnimationTime());
             }
         }
     }
     IEnumerator AnimationTime() {
+        GetComponent<MeshRenderer>().enabled = false;
         lettersWithShader.SetActive(true);
         disolveAnimation.SetTrigger("Dissolve");
         yield return new WaitForSeconds(1);
         letters.SetActive(false);
         dissolved = true;
         yield return new WaitForSeconds(1);
-        bigLetters.SetActive(true);
-        bigLettersAnim.SetTrigger("UnDissolve");
+        for (int i = 0; i < bigLetters.Length; i++)
+        {
+            bigLetters[i].SetActive(true);
+            bigLetters[i].GetComponent<Animator>().SetTrigger("UnDissolve");
+
+        }
         Debug.Log("Dit runned");
+        gameObject.SetActive(false);
     }
 }

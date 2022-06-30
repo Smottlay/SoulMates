@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.014053097, g: 0.064411305, b: 0.18034916, a: 1}
+  m_IndirectSpecularColor: {r: 0.014053048, g: 0.064411305, b: 0.18034896, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -834,7 +834,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
-  bigLetters: {fileID: 1450388663}
+  bigLetters:
+  - {fileID: 1450388663}
+  - {fileID: 1748284049}
+  - {fileID: 454133162}
   bigLettersAnim: {fileID: 1716729258}
   disolveAnimation: {fileID: 3800498228129385796}
   disolveShader: {fileID: 1716729256}
@@ -6424,7 +6427,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
-  bigLetters: {fileID: 1450388663}
+  bigLetters:
+  - {fileID: 1450388663}
+  - {fileID: 1748284049}
+  - {fileID: 454133162}
   bigLettersAnim: {fileID: 1716729258}
   disolveAnimation: {fileID: 7787591567186949435}
   disolveShader: {fileID: 1716729256}
@@ -6701,7 +6707,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
-  bigLetters: {fileID: 1450388663}
+  bigLetters:
+  - {fileID: 1450388663}
+  - {fileID: 1748284049}
+  - {fileID: 454133162}
   bigLettersAnim: {fileID: 1716729258}
   disolveAnimation: {fileID: 8869388660985967100}
   disolveShader: {fileID: 1716729256}
@@ -7432,7 +7441,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
-  bigLetters: {fileID: 1450388663}
+  bigLetters:
+  - {fileID: 1450388663}
+  - {fileID: 1748284049}
+  - {fileID: 454133162}
   bigLettersAnim: {fileID: 1716729258}
   disolveAnimation: {fileID: 4013487463817663730}
   disolveShader: {fileID: 1716729256}
@@ -7991,7 +8003,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
-  bigLetters: {fileID: 1450388663}
+  bigLetters:
+  - {fileID: 1450388663}
+  - {fileID: 1748284049}
+  - {fileID: 454133162}
   bigLettersAnim: {fileID: 1716729258}
   disolveAnimation: {fileID: 7571962287069715194}
   disolveShader: {fileID: 1716729256}
@@ -8771,7 +8786,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
-  bigLetters: {fileID: 454133162}
+  bigLetters:
+  - {fileID: 1450388663}
+  - {fileID: 1748284049}
+  - {fileID: 454133162}
   bigLettersAnim: {fileID: 1532927522}
   disolveAnimation: {fileID: 2476720199844081835}
   disolveShader: {fileID: 1716729256}
@@ -13995,7 +14013,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
-  bigLetters: {fileID: 1450388663}
+  bigLetters:
+  - {fileID: 1450388663}
+  - {fileID: 1748284049}
+  - {fileID: 454133162}
   bigLettersAnim: {fileID: 1716729258}
   disolveAnimation: {fileID: 4538090845281590894}
   disolveShader: {fileID: 1716729256}
@@ -14497,7 +14518,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lettersWithShader: {fileID: 233100006}
   letters: {fileID: 321032203}
-  bigLetters: {fileID: 1748284049}
+  bigLetters:
+  - {fileID: 1450388663}
+  - {fileID: 1748284049}
+  - {fileID: 454133162}
   bigLettersAnim: {fileID: 2047040188}
   disolveAnimation: {fileID: 3493355235253692422}
   disolveShader: {fileID: 1716729256}
