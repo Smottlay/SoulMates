@@ -13,19 +13,26 @@ public class TutorialManager : MonoBehaviour
     public GameObject[] panels;
     public Material[] rightHighlightShader;
     public Material[] leftHighlightShader;
+    public CheckForLetter checkForLetter;
+    public GameObject tutorialObjects;
 
     private RaycastHit hit;
     private bool timerBool;
     private bool toggleShaderGrab;
     private bool toggleTeleportShader;
     private bool dissolvedConfirm;
-    public GameObject tutorialObjects;
+    private bool holding;
+    
 
     private void Awake()
     {
         dissolvedConfirm = plaatletters.GetComponent<PlaatsLetters>().dissolved;
         timerBool = true;
         tutorialObjects.transform.parent = this.gameObject.transform;
+        holding = checkForLetter.GetComponent<CheckForLetter>().isHoldingLetter;
+
+        panels[2].GetComponent<UILerp>().enabled = false;
+        panels[3].GetComponent<UILerp>().enabled = false;
     }
     private void Update()
     { 
@@ -69,34 +76,18 @@ public class TutorialManager : MonoBehaviour
 
     private void GrabTutorial()
     {
-        if (toggleShaderGrab)
+        
+        if (!holding)
         {
+            panels[2].SetActive(true);
+            panels[3].SetActive(false);
             rightHighlightShader[1].SetInt("_ToggleShader", 1);
         }
-        else if (!toggleShaderGrab)
+        else if (holding)
         {
+            panels[2].SetActive(false);
+            panels[3].SetActive(true);
             rightHighlightShader[1].SetInt("_ToggleShader", 0);
-        }
-    }
-
-    private void PlacementTutorial()
-    {
-        panels[3].SetActive(false);
-        panels[4].SetActive(true);
-        
-        if (dissolvedConfirm)
-        {
-            toggleTeleportShader = true;
-            if (toggleTeleportShader)
-            {
-                rightHighlightShader[0].SetInt("_ToggleShader", 1);
-                leftHighlightShader[0].SetInt("_ToggleShader", 1);
-            }
-            else if (!toggleTeleportShader)
-            {
-                rightHighlightShader[0].SetInt("_ToggleShader", 0);
-                leftHighlightShader[0].SetInt("_ToggleShader", 0);
-            }
         }
     }
 
