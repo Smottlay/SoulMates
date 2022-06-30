@@ -14307,7 +14307,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 7f00b5d832a285144bf09de47d7c7cfd, type: 2}
   tutorialObjects: {fileID: 9041971357852050943}
   checkForLetter: {fileID: 1832876254}
-  plaats: {fileID: 0}
+  plaats: {fileID: 2084911116}
 --- !u!1 &2083432230
 GameObject:
   m_ObjectHideFlags: 0

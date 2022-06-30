@@ -20,6 +20,7 @@ public class TutorialManager : MonoBehaviour
     private RaycastHit hit;
     private bool timerBool;
     private bool confirmDissolve;
+    private bool theVeryEnd;
     private bool holding;
     
 
@@ -67,37 +68,42 @@ public class TutorialManager : MonoBehaviour
                 panels[2].SetActive(true);
                 tutorialObjects.gameObject.SetActive(false);
                 Debug.Log("destroyed");
+                theVeryEnd = true;
             }
         }
     }
 
     private void GrabTutorial()
     {
+        if (theVeryEnd)
+        {
+            if (!holding & !confirmDissolve)
+            {
+                panels[2].SetActive(true);
+                panels[3].SetActive(false);
+                rightHighlightShader[1].SetInt("_ToggleShader", 1);
+                leftHighlightShader[1].SetInt("_ToggleShader", 1);
+            }
+            else if (holding & !confirmDissolve)
+            {
+                panels[2].SetActive(false);
+                panels[3].SetActive(true);
+                rightHighlightShader[1].SetInt("_ToggleShader", 0);
+                leftHighlightShader[1].SetInt("_ToggleShader", 0);
+            }
+
+            if (confirmDissolve)
+            {
+                rightHighlightShader[1].SetInt("_ToggleShader", 0);
+                leftHighlightShader[1].SetInt("_ToggleShader", 0);
+                panels[2].SetActive(false);
+                panels[3].SetActive(false);
+
+                panels[4].SetActive(true);
+                theVeryEnd = false;
+            }
+        }
         
-        if (!holding & !confirmDissolve)
-        {
-            panels[2].SetActive(true);
-            panels[3].SetActive(false);
-            rightHighlightShader[1].SetInt("_ToggleShader", 1);
-            leftHighlightShader[1].SetInt("_ToggleShader", 1);
-        }
-        else if (holding & !confirmDissolve)
-        {
-            panels[2].SetActive(false);
-            panels[3].SetActive(true);
-            rightHighlightShader[1].SetInt("_ToggleShader", 0);
-            leftHighlightShader[1].SetInt("_ToggleShader", 0);
-        }
-
-        if (confirmDissolve)
-        {
-            rightHighlightShader[1].SetInt("_ToggleShader", 0);
-            leftHighlightShader[1].SetInt("_ToggleShader", 0);
-            panels[2].SetActive(false);
-            panels[3].SetActive(false);
-
-            panels[4].SetActive(true);
-        }
     }
 
     private void TeleportationTutorial(InputAction.CallbackContext callbackContext)
