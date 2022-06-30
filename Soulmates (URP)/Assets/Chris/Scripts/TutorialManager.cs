@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
+using Unity.XR.OpenVR;
 
 public class TutorialManager : MonoBehaviour
 {
@@ -30,11 +32,7 @@ public class TutorialManager : MonoBehaviour
         WelcomeTutorial();
         HeadTutorial();
         GrabTutorial();
-
-       /*
-       PlacementTutorial();
-       TeleportationTutorial();
-       */
+       //PlacementTutorial();
     }
 
     private void WelcomeTutorial()
@@ -85,10 +83,7 @@ public class TutorialManager : MonoBehaviour
     {
         panels[3].SetActive(false);
         panels[4].SetActive(true);
-    }
-
-    private void TeleportationTutorial()
-    {
+        
         if (dissolvedConfirm)
         {
             toggleTeleportShader = true;
@@ -102,6 +97,18 @@ public class TutorialManager : MonoBehaviour
                 rightHighlightShader[0].SetInt("_ToggleShader", 0);
                 leftHighlightShader[0].SetInt("_ToggleShader", 0);
             }
-        } 
+        }
+    }
+
+    private void TeleportationTutorial(InputAction.CallbackContext callbackContext)
+    {
+        if (callbackContext.started)
+        {
+            panels[4].SetActive(false);
+        }
+        else if (callbackContext.canceled)
+        {
+            panels[4].SetActive(true);
+        }
     }
 }

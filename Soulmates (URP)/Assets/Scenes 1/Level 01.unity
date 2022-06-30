@@ -838,6 +838,7 @@ MonoBehaviour:
   disolveAnimation: {fileID: 2084911122}
   disolveShader: {fileID: 2736629346798780345}
   skipLetters: 0
+  dissolved: 0
 --- !u!65 &384898459
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -942,6 +943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   welcomeTimer: 10
+  plaatletters: {fileID: 0}
   panels:
   - {fileID: 900178111}
   - {fileID: 703208398}
@@ -6420,6 +6422,7 @@ MonoBehaviour:
   disolveAnimation: {fileID: 2084911122}
   disolveShader: {fileID: 2736629346798780345}
   skipLetters: 0
+  dissolved: 0
 --- !u!65 &732791558
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6696,6 +6699,7 @@ MonoBehaviour:
   disolveAnimation: {fileID: 2084911122}
   disolveShader: {fileID: 2736629346798780345}
   skipLetters: 0
+  dissolved: 0
 --- !u!65 &746888447
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6979,6 +6983,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: VR RIG
       objectReference: {fileID: 0}
+    - target: {fileID: 2401062293135888407, guid: bc190574b4181ba49946f2eff7e9c141,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4267355630295009598, guid: bc190574b4181ba49946f2eff7e9c141,
         type: 3}
       propertyPath: m_RootOrder
@@ -7032,6 +7041,16 @@ PrefabInstance:
     - target: {fileID: 4267355630295009598, guid: bc190574b4181ba49946f2eff7e9c141,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7635529257906159609, guid: bc190574b4181ba49946f2eff7e9c141,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7635529258585558247, guid: bc190574b4181ba49946f2eff7e9c141,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7635529258900016393, guid: bc190574b4181ba49946f2eff7e9c141,
@@ -7411,6 +7430,7 @@ MonoBehaviour:
   disolveAnimation: {fileID: 2084911122}
   disolveShader: {fileID: 2736629346798780345}
   skipLetters: 0
+  dissolved: 0
 --- !u!65 &1228923672
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7963,6 +7983,7 @@ MonoBehaviour:
   disolveAnimation: {fileID: 2084911122}
   disolveShader: {fileID: 2736629346798780345}
   skipLetters: 0
+  dissolved: 0
 --- !u!65 &1464299989
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8680,6 +8701,7 @@ MonoBehaviour:
   disolveAnimation: {fileID: 2084911122}
   disolveShader: {fileID: 2736629346798780345}
   skipLetters: 0
+  dissolved: 0
 --- !u!65 &1905913967
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13878,6 +13900,7 @@ MonoBehaviour:
   disolveAnimation: {fileID: 4538090845281590894}
   disolveShader: {fileID: 2736629346798780345}
   skipLetters: 0
+  dissolved: 0
 --- !u!65 &2084911119
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14399,6 +14422,7 @@ MonoBehaviour:
   disolveAnimation: {fileID: 2084911122}
   disolveShader: {fileID: 2736629346798780345}
   skipLetters: 0
+  dissolved: 0
 --- !u!65 &2123108918
 BoxCollider:
   m_ObjectHideFlags: 0
