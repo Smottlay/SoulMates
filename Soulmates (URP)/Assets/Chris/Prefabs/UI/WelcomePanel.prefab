@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309986446445185041}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -47,9 +47,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offsetRadius: 0
   headDistance: 2
-  imageHeight: 0
+  imageHeight: -0.2
   mainCam: {fileID: 0}
-  smoothFactor: 0.15
+  smoothFactor: 0.05
 --- !u!1 &1309986447082247602
 GameObject:
   m_ObjectHideFlags: 0

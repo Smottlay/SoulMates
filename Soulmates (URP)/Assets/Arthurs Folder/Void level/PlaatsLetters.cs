@@ -12,7 +12,7 @@ public class PlaatsLetters : MonoBehaviour
     public Renderer disolveShader;
     float dissolve;
     public bool skipLetters;
-    private bool dissolved;
+    public bool dissolved;
     /*
     private void OnTriggerEnter(Collider other) {
         if(other.gameObject.name == this.gameObject.name || skipLetters == true) {
