@@ -1376,6 +1376,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2350209057794220806, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1478882975}
+    - target: {fileID: 2350209057794220806, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TakeScreenShots
+      objectReference: {fileID: 0}
     - target: {fileID: 2626247937592607832, guid: ba5f755bfb74a9f45a4721854016eb46,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1547,6 +1557,26 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8343918787994317378, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
+      propertyPath: shape
+      value: Cylinder
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343918787994317378, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
+      propertyPath: wallMaterial
+      value: 
+      objectReference: {fileID: 1551687032}
+    - target: {fileID: 8343918787994317378, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
+      propertyPath: floorMaterial
+      value: 
+      objectReference: {fileID: 728315290}
+    - target: {fileID: 8343918787994317378, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
+      propertyPath: ceilingMaterial
+      value: 
+      objectReference: {fileID: 1675939165}
     - target: {fileID: 8762184711513469024, guid: ba5f755bfb74a9f45a4721854016eb46,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1556,6 +1586,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: PrevMat
+      objectReference: {fileID: 0}
+    - target: {fileID: 8976500134349655057, guid: ba5f755bfb74a9f45a4721854016eb46,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8976500134411963142, guid: ba5f755bfb74a9f45a4721854016eb46,
         type: 3}
