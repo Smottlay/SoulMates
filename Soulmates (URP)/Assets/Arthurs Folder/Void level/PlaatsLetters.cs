@@ -22,6 +22,7 @@ public class PlaatsLetters : MonoBehaviour
     private void Awake()
     {
         _collider.enabled = false;
+        lettersplaced = 0;
     }
 
     private void OnTriggerEnter(Collider other) {
